@@ -45,3 +45,23 @@ button {
   width: 220px;
   height: 55px;
 }
+.login-tap {
+  display: inline;
+  color: white;
+  font-size: 24px;
+}
+.login {
+  margin-right: 20px;
+}
+button {
+  margin-top: 21px;
+  border: 1px solid white;
+  background-color: white;
+  color: #2d9c76;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  width: 220px;
+  height: 55px;
+}
