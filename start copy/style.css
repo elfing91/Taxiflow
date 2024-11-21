@@ -53,8 +53,9 @@ button {
 .login {
   margin-right: 20px;
 }
-#kakao-login-btn {
-  margin-top: 80px;
+button {
+  margin-top: 21px;
+  border: 1px solid white;
   background-color: white;
   color: #2d9c76;
   font-size: 18px;

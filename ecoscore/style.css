@@ -65,11 +65,11 @@ h1 {
 .search-box {
   margin-top: 200px;
   background-color: white;
-  width: 360px;
+  width: 430px;
   height: 1100px;
   margin: 0 auto;
-  border-top-left-radius: 102px;
-  border-top-right-radius: 102px;
+  border-top-left-radius: 130px;
+  border-top-right-radius: 130px;
 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 사방으로 그림자 */
 
@@ -90,7 +90,7 @@ h2 {
   margin-top: 50px;
   margin-left: 76px;
   margin-right: 70px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   text-align: center;
   font-weight: bolder;
 }
@@ -102,8 +102,8 @@ h2 .energy {
 }
 
 .search-img {
-  width: 203px;
-  height: 212px;
+  width: 260px;
+  height: 260px;
   margin-left: 60px;
   margin-right: 60px;
 }
@@ -117,12 +117,33 @@ h2 .energy {
   height: 55px;
   text-align: center;
   line-height: 55px;
-  margin-bottom: 26px;
-  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid white;
   border-radius: 25px;
+}
+
+.logout-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.log-out {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  color: #727272;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+.member-out {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  color: #727272;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 /*footer*/

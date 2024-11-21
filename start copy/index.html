@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+      // SDK 초기화
+      Kakao.init("YOUR_APP_JAVASCRIPT_KEY"); // "JavaScript 키"를 여기에 입력
+      console.log(Kakao.isInitialized()); // true가 나오면 성공!
+    </script>
+  </head>
+  <body>
+    <div class="l_wrap">
+      <img src="../icon/logo.png" />
+      <h1>Taxflow</h1>
+
+      <div class="login-tap">
+        <a class="login">Login </a>
+        <a> Signup</a>
+      </div>
+      <button id="id"><a href="#">Username</a></button>
+      <button id="pw"><a href="#">Password</a></button>
+      <button id="kakao-login-btn">카카오 로그인</button>
+    </div>
+  </body>
+
+  <script>
+    document
+      .getElementById("kakao-login-btn")
+      .addEventListener("click", function () {
+        // 카카오 로그인 요청
+        Kakao.Auth.login({
+          success: function (authObj) {
+            console.log("로그인 성공:", authObj); // 인증 토큰 확인
+          },
+          fail: function (err) {
+            console.error("로그인 실패:", err); // 에러 로그 출력
+          },
+        });
+      });
+  </script>
+</html>
